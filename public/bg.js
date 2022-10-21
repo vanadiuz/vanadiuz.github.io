@@ -1,37 +1,95 @@
 'use strict';
 
-const canvas = document.getElementsByTagName('canvas')[0];
-canvas.width = canvas.clientWidth;
-canvas.height = canvas.clientHeight;
+
+setTimeout( function(){
+
+  const canvas = document.getElementsByTagName('canvas')[0];
+// canvas.width = canvas.clientWidth;
+// canvas.height = canvas.clientHeight;
+
+//get element by id
+var app1 = document.getElementById("app");
+//get element by class name
+var app2 = document.getElementById("app1");
+//get element main from dom
+// var main = document.getElementById("main");
+//get element by tag name
+// var main = document.getElementsByTagName("main")[0];
+// var footer = document.getElementsByTagName("footer")[0];
+// footer
+
+
+// canvas.width = app2.clientWidth;
+canvas.height = app2.clientHeight;
+
+// canvas.height = app2.clientHeight +footer.clientHeight;
+
+//log app1.clientWidth
+
+document.addEventListener('DOMContentLoaded', function() {
+  console.log(app1.clientHeight);
+});
+// console.log(app1.clientHeight);
+
+canvas.width = window.innerWidth;
+// canvas.height = window.innerHeight;
+
 
 
 let config = {
  TEXTURE_DOWNSAMPLE: 1,
-    DENSITY_DISSIPATION: 0.89,
-    VELOCITY_DISSIPATION: 0.99,
-    //PRESSURE: 99,
-  PRESSURE_DISSIPATION: 0,
-    PRESSURE_ITERATIONS: 25,
-    CURL: 2,
-    SPLAT_RADIUS: 0.001,
-    SPLAT_FORCE: 10,
+     DENSITY_DISSIPATION: 0.85,
+     VELOCITY_DISSIPATION: 0.999,
+    // PRESSURE: 1,
+  PRESSURE_DISSIPATION: 0.999,
+    PRESSURE_ITERATIONS: 100,
+    CURL: 1,
+    SPLAT_RADIUS: 0.002,
+    SPLAT_FORCE: 0.0001,
     SHADING: true,
     //COLORFUL: true,
     //COLOR_UPDATE_SPEED: 10,
     //PAUSED: false,
     //BACK_COLOR: { r: 0, g: 0, b: 0 },
     TRANSPARENT: true,
-    BLOOM: true,
-    BLOOM_ITERATIONS: 8,
+    // BLOOM: true,
+    BLOOM_ITERATIONS: 64,
     BLOOM_RESOLUTION: 1024,
-    BLOOM_INTENSITY: 0.8,
-    BLOOM_THRESHOLD: 0.6,
-    BLOOM_SOFT_KNEE: 0.7,
+    BLOOM_INTENSITY: 0.001,
+    BLOOM_THRESHOLD: 0.006,
+    BLOOM_SOFT_KNEE: 0.007,
     SUNRAYS: false,
     SUNRAYS_RESOLUTION: 196,
-    SUNRAYS_WEIGHT: .1,
+    SUNRAYS_WEIGHT: .01,
 };
 
+
+// let config = {
+//   TEXTURE_DOWNSAMPLE: 1,
+//      DENSITY_DISSIPATION: 0.89,
+//      VELOCITY_DISSIPATION: 0.99,
+//      //PRESSURE: 99,
+//    PRESSURE_DISSIPATION: 0,
+//      PRESSURE_ITERATIONS: 25,
+//      CURL: 2,
+//      SPLAT_RADIUS: 0.001,
+//      SPLAT_FORCE: 10,
+//      SHADING: true,
+//      //COLORFUL: true,
+//      //COLOR_UPDATE_SPEED: 10,
+//      //PAUSED: false,
+//      //BACK_COLOR: { r: 0, g: 0, b: 0 },
+//      TRANSPARENT: true,
+//      BLOOM: true,
+//      BLOOM_ITERATIONS: 8,
+//      BLOOM_RESOLUTION: 1024,
+//      BLOOM_INTENSITY: 0.8,
+//      BLOOM_THRESHOLD: 0.6,
+//      BLOOM_SOFT_KNEE: 0.7,
+//      SUNRAYS: false,
+//      SUNRAYS_RESOLUTION: 196,
+//      SUNRAYS_WEIGHT: .1,
+//  };
 
 let pointers = [];
 let splatStack = [];
@@ -646,6 +704,26 @@ canvas.addEventListener('mousemove', e => {
   pointers[0].y = e.offsetY;
 });
 
+
+
+
+
+
+app1.addEventListener('mousemove', e => {
+  pointers[0].moved = pointers[0].down;
+  pointers[0].dx = (e.pageX - pointers[0].x) * 10;
+
+  //add scroll displacement to dx
+  // pointers[0].dx += scrollX;
+  console.log(e.pageX);
+
+  pointers[0].dy = (e.pageY - pointers[0].y) * 10;
+  pointers[0].x = e.pageX;
+  pointers[0].y = e.pageY;
+});
+
+
+
 canvas.addEventListener('touchmove', e => {
   e.preventDefault();
   const touches = e.targetTouches;
@@ -663,6 +741,13 @@ canvas.addEventListener('mousemove', () => {
   pointers[0].down = true;
   pointers[0].color = [Math.random() + 0.2, Math.random() + 0.2, Math.random() + 0.2];
 });
+
+
+app1.addEventListener('mousemove', () => {
+  pointers[0].down = true;
+  pointers[0].color = [Math.random() + 0.2, Math.random() + 0.2, Math.random() + 0.2];
+});
+
 
 canvas.addEventListener('touchstart', e => {
   e.preventDefault();
@@ -683,6 +768,11 @@ window.addEventListener('mouseleave', () => {
   pointers[0].down = false;
 });
 
+
+app1.addEventListener('mouseleave', () => {
+  pointers[0].down = false;
+});
+
 window.addEventListener('touchend', e => {
   const touches = e.changedTouches;
   for (let i = 0; i < touches.length; i++)
@@ -690,4 +780,8 @@ window.addEventListener('touchend', e => {
   if (touches[i].identifier == pointers[j].id)
   pointers[j].down = false;
 });
+
+
+
+} , 1000);
 

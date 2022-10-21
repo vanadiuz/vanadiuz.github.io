@@ -16,6 +16,14 @@ new Vue({
 
 Vue.use(StoryblokVue)
 
+router.afterEach((to, from) => {
+  setTimeout( function(){
+    const canvas = document.getElementsByTagName('canvas')[0];
+    canvas.height = document.getElementById("app1").clientHeight;
+    
+  } , 1000);
+})
+
 
 // Vue.use(VueAnalytics, {
 //   id: 'UA-139190314-1',

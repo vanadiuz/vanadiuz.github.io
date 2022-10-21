@@ -1,7 +1,7 @@
 <template>
   <v-app :dark="goDark" >
-    <v-content >
-      <v-container align-center flat color="transparent">
+    <v-content id="app1">
+      <v-container  align-center flat color="transparent">
         <TheHeader :goDark="goDark" @changeTheme="updateTheme($event)"/>
 
         <transition
@@ -10,7 +10,7 @@
           enter-active-class="animated fadeIn fast"
           leave-active-class="animated fadeOut faster"
         >
-          <router-view></router-view>
+          <router-view ></router-view>
         </transition>
       </v-container>
     </v-content>
