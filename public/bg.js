@@ -724,8 +724,8 @@ app1.addEventListener('mousemove', e => {
 
 
 
-canvas.addEventListener('touchmove', e => {
-  e.preventDefault();
+app1.addEventListener('touchmove', e => {
+  // e.preventDefault();
   const touches = e.targetTouches;
   for (let i = 0; i < touches.length; i++) {
     let pointer = pointers[i];
@@ -749,8 +749,8 @@ app1.addEventListener('mousemove', () => {
 });
 
 
-canvas.addEventListener('touchstart', e => {
-  e.preventDefault();
+app1.addEventListener('touchstart', e => {
+  // e.preventDefault();
   const touches = e.targetTouches;
   for (let i = 0; i < touches.length; i++) {
     if (i >= pointers.length)
