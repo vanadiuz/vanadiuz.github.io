@@ -1,6 +1,6 @@
 <template>
   <v-layout column justify-center align-center class="mt-4 pt-2">
-    <VueCompareImage
+    <!-- <VueCompareImage
       class="hidden-md-and-down"
       hover
       :style="{ minWidth: '1300px' }"
@@ -21,9 +21,9 @@
       :sliderPositionPercentage="sliderPosition"
     />
 
-    <br>
+    <br> -->
 
-    <vue-typer class="headline" :repeat="0" text="Eldin Zaimovic"></vue-typer>
+    <!-- <vue-typer class="headline" :repeat="0" text="Eldin Zaimovic"></vue-typer>
     <vue-typer
       :text="text1"
       :repeat="Infinity"
@@ -36,31 +36,40 @@
       erase-style="select-back"
       :erase-on-complete="false"
       caret-animation="smooth"
-    ></vue-typer>
-    <br>
+    ></vue-typer> -->
+    <!-- <br> -->
     <v-flex xs12 sm6 md4 lg4 xl4>
       <v-card flat color="transparent" max-width="500">
         <v-card-title primary-title>
           <div>
-            <h3 class="headline mb-0">
-              <span>About</span>
-              <span class="green--text">Me</span>
-            </h3>
-            <div>
-              <p>
-                Hello! I’m Eldin Zaimovic. I'm a front-end developer who
-                is passionate about
-                <span
-                  class="green--text font-weight-bold"
-                >VUE</span>, building great user experiences,
-                fighting for simplicity over complexity and constantly learning.
-                When I'm not coding or making videos, you'll find me traveling across Europe.
-              </p>
+            <!-- <v-icon>$vuetify.icons.values.custom</v-icon> -->
+            <!-- <v-icon aria-hidden="false">
+              fab fa-github
+            </v-icon> -->
+
+            <div class="container1">
+
+                <img class="image" src="./../assets/meditate.webp" alt="me" width="85%"/>
+              <div class="text">
+                <!-- <v-icon v-text="$vuetify.icons.values"></v-icon> -->
+                <div>
+                  <h2>PhD Student at U Vienna</h2>
+                  <br>
+                  <br>
+                  <h3><span
+                      class="green--text font-weight-bold"
+                    >Computer Simulations </span>  of 
+                    Soft Matter Physics</h3>
+                  <br>
+                  <h2>👨‍💻🧬👀</h2>
+
+                </div>
+              </div>
             </div>
           </div>
         </v-card-title>
 
-        <v-card-actions class="hidden-sm-and-down">
+        <v-card-actions class="hidden-sm-and-down justify-center">
           <v-btn
             v-for="icon in icons"
             :key="icon.icon"
@@ -125,25 +134,12 @@ export default {
   data() {
     return {
       icons: [
-        { href: "https://github.com/EldinZaimovic", icon: "fab fa-github" },
+        { href: "https://github.com/vanadiuz", icon: "fab fa-github" },
         {
-          href: "https://stackoverflow.com/users/story/9660700",
-          icon: "fab fa-stack-overflow"
+          href: "https://www.researchgate.net/profile/Ivan-Novikau",
+          icon: "fab fa-brands fa-researchgate"
         },
-        { href: "https://twitter.com/EldinMatricar", icon: "fab fa-twitter" },
-        {
-          href: "https://www.linkedin.com/in/eldin-zaimovic",
-          icon: "fab fa-linkedin-in"
-        },
-        {
-          href: "https://www.xing.com/profile/Eldin_Zaimovic?sc_o=mxb_p",
-          icon: "fab fa-xing"
-        },
-        {
-          href: "https://www.facebook.com/EldinVasVoli",
-          icon: "fab fa-facebook-f"
-        },
-        { href: "https://www.instagram.com/matricar", icon: "fab fa-instagram" }
+        { href: "https://scholar.google.com/citations?user=n0wB50gAAAAJ&hl=en", icon: "$vuetify.icons.values.custom" },
       ],
       text1: ["Front-End Developer", "Web Developer", "Web Designer"],
       leftImage: "https://i.imgur.com/bU50uS9.jpg",
@@ -189,5 +185,61 @@ export default {
   display: inline-block;
   background-color: #e91e63;
 }
+
+
+.container1 {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "image text"; 
+  justify-items: stretch; 
+}
+.image { 
+  justify-self: center; 
+  grid-area: image; 
+}
+.text { 
+  grid-area: text; 
+  /* squize bottom space */
+  margin-bottom: 0px;
+}
+
+/* new layout for small screen grid  */
+@media only screen and (max-width: 600px) {
+  .container1 {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 0.75fr; 
+    gap: 50px 0px; 
+    grid-template-areas: 
+      "image" 
+      "text"; 
+    justify-items: stretch; 
+    /* justify-items: center;  */
+    /* justify-content: center;  */
+  }
+  .image { 
+    /* justify-self: center;  */
+    /* align-self: center;  */
+    /* width: 100%; */
+    grid-area: image; 
+  }
+  .text { grid-area: text; margin-bottom: 0px;}
+}
+
+/* rotate .image by 10 degree */
+.image {
+  transform: rotate(-7deg);
+  /* width: 100%; */
+}
+
+
+
 </style>
 
