@@ -715,7 +715,8 @@ app1.addEventListener('mousemove', e => {
 
   //add scroll displacement to dx
   // pointers[0].dx += scrollX;
-  console.log(e.pageX);
+  // console.log(e.pageX);
+  
 
   pointers[0].dy = (e.pageY - pointers[0].y) * 10;
   pointers[0].x = e.pageX;

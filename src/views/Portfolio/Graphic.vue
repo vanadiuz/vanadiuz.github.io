@@ -52,7 +52,7 @@ export default {
       { property: "og:url", content: "https://eldin.space" },
       {
         property: "og:image",
-        content: "https://i.imgur.com/Dcz2PGx.jpg"
+        content: "./../assets/siteicon.jpg"
       },
       {
         property: "og:description",

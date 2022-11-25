@@ -1,5 +1,6 @@
 <template>
   <v-container grid-list-xl>
+    <BubbleCloud />
     <v-layout row justify-center align-center wrap class="mt-4 pt-2">
       <v-flex v-for="portfolio in portfolios" :key="portfolio.src" xs12 sm12 md4 lg4 xl4>
         <v-card
@@ -21,6 +22,8 @@
 </template>
 
 <script>
+import BubbleCloud from "./../../components/BubbleCloud";
+
 export default {
   metaInfo: {
     title: "Portfolio",
@@ -47,6 +50,9 @@ export default {
           "Eldin Zaimovic's Portfolio Web Development Video Editing Graphic Design Front-End Advetising"
       }
     ]
+  },
+  components: {
+    BubbleCloud
   },
   data() {
     return {
