@@ -4,6 +4,7 @@ import 'vuetify/src/stylus/app.styl'
 
 import colors from 'vuetify/lib/util/colors'
 import GoogleScolarIcon from '@/components/GoogleScolarIcon.vue'
+import ArxivIcon from '@/components/ArxivIcon.vue'
 
 Vue.use(Vuetify, {
   // iconfont: 'md',
@@ -16,6 +17,9 @@ Vue.use(Vuetify, {
     values: {
       custom: { // name of our custom icon
         component: GoogleScolarIcon, // our custom component
+      },
+      arxiv: { // name of our custom icon
+        component: ArxivIcon, // our custom component
       },
     },
   },
