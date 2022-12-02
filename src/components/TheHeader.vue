@@ -43,7 +43,7 @@
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn flat to="/" active-class="green--text headline">Home</v-btn>
         <v-btn flat to="/resume" active-class="green--text headline">CV</v-btn>
-        <v-btn flat to="/science" active-class="green--text headline">Science</v-btn>
+        <v-btn flat to="/research" active-class="green--text headline">Research</v-btn>
         <v-btn flat href="https://ufind.univie.ac.at/en/person.html?id=105426&teaching=true" active-class="green--text headline">Teaching</v-btn>
         <v-btn flat to="/contact" active-class="green--text headline">Contact</v-btn>
         <!-- <v-btn @click="changeTheme" depressed small icon> -->
