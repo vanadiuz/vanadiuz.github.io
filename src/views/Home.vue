@@ -90,7 +90,7 @@ export default {
     ]
   },
   components: {
-    "vue-typer": VueTyper,
+    "vue-typer": VueTyper,  
     VueCompareImage
   },
   data() {
