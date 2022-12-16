@@ -9,12 +9,12 @@
         :key="project.title"
       >
         <template v-slot:activator="{ on }">
-          <v-flex xs12 sm6 md4 lg4 xl4 v-on="on">
+          <v-flex xs12 sm6 md4 lg3 xl2 v-on="on">
             <v-card hover flat elevation="5" shaped color="black">
               <v-img
                 :src="project.poster"
                 :alt="project.title"
-                height="350"
+                
               ></v-img>
               <v-card-title primary-title class="justify-center">
                 <h3 class="subtitle-1">
