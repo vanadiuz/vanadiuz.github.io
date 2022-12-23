@@ -12,12 +12,12 @@
             <v-list-tile-title>CV</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile active-class="green--text" to="/science">
+        <v-list-tile active-class="green--text" to="/research">
           <v-list-tile-content>
-            <v-list-tile-title>Science</v-list-tile-title>
+            <v-list-tile-title>Research</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile active-class="green--text" to="/teaching">
+        <v-list-tile active-class="green--text" href="https://ufind.univie.ac.at/en/person.html?id=105426&teaching=true">
           <v-list-tile-content>
             <v-list-tile-title>Teaching</v-list-tile-title>
           </v-list-tile-content>
@@ -32,7 +32,7 @@
     <v-toolbar flat dense color="transparent" scroll-off-screen>
       <v-toolbar-side-icon class="hidden-md-and-up" @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title class="headline">
-        <span class="font-weight-light">Ivan</span>
+        <span class="font-weight-light">Ivan</span> 
         <span class="green--text">Novikau</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>

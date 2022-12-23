@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
   <v-layout column justify-center align-center wrap class="mt-4 pt-2">
     <v-flex xs12 sm12 md5 lg6 xl6 class="mt-4 pt-4">
@@ -54,7 +55,7 @@
     <v-layout row justify-center align-center wrap class="mt-4 pt-2">
       <div class="mt-4 pt-2">
         <v-btn
-          href="https://docs.google.com/document/d/1WSR42FEgUahJuR_RArW1wz7TfUBlgj13zekRidmQgs4/edit?usp=sharing"
+          href="https://1drv.ms/b/s!AhcaUMd40DRFidU4VYExBTZ5un17GA?e=9yoWzt"
           target="_blank"
           color="green"
           dark
@@ -78,21 +79,21 @@ export default {
       {
         name: "description",
         content:
-          "Vue NUXT HTML CSS JavaScript Design Adobe XD Photoshop Coding Skills Resume Work Web Developer Front-End"
+          "Ivan Novikau CV"
       },
       { charset: "utf-8" },
-      { property: "og:title", content: "Eldin' Space" },
-      { property: "og:site_name", content: "Eldin' Space" },
+      { property: "og:title", content: "Ivan Novikau" },
+      { property: "og:site_name", content: "Ivan Novikau" },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://eldin.space" },
+      { property: "og:url", content: "https://vanadiuz.github.io" },
       {
         property: "og:image",
-        content: "https://i.imgur.com/Dcz2PGx.jpg"
+        content: "./../assets/mebw.webp"
       },
       {
         property: "og:description",
         content:
-          "Vue NUXT HTML CSS JavaScript Design Adobe XD Photoshop Coding Skills Resume Work Web Developer Front-End"
+          "Ivan Novikau CV"
       }
     ]
   },

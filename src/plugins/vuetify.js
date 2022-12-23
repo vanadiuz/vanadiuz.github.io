@@ -1,6 +1,7 @@
 import Vue from 'vue'
-import Vuetify from 'vuetify/lib'
-import 'vuetify/src/stylus/app.styl'
+import Vuetify from 'vuetify'
+// import 'vuetify/src/stylus/app.styl'
+import 'vuetify/dist/vuetify.min.css'
 
 import colors from 'vuetify/lib/util/colors'
 import GoogleScolarIcon from '@/components/GoogleScolarIcon.vue'

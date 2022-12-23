@@ -84,7 +84,7 @@ export default {
       {
         property: "og:description",
         content:
-          "my research papers"
+          "My research papers"
       }
     ]
   },
@@ -134,4 +134,9 @@ export default {
 </script>
 
 <style  scoped>
+
+.v-card {
+  background-color: transparent !important;
+  backdrop-filter: grayscale(100%) blur(10px) brightness(0.5);
+}
 </style>
