@@ -1,6 +1,6 @@
 <template>
 
-    <v-app id="app1">
+    <v-app flat id="app1">
         <v-container  align-center flat color="transparent">
           <TheHeader/>
 
@@ -12,10 +12,10 @@
           >
             <router-view ></router-view>
           </transition>
+          
         </v-container>
       <TheFooter/>
     </v-app>
-
 </template>
 
 <script>
@@ -48,10 +48,22 @@ export default {
   },
 };
 </script>
-<style>
+<style lang="scss">
 @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css";
+
+$body-font-family: 'IBM Plex Sans';
+$title-font: 'IBM Plex Sans';
 
 .v-theme--dark:not(i){
   background-color: transparent !important;
 }
+
+.v-application {
+  font-family: $body-font-family, sans-serif !important;
+  .title { // To pin point specific classes of some components
+      font-family: $title-font, sans-serif !important;
+  }
+}
+
+
 </style>

@@ -14,6 +14,7 @@ export function registerPlugins (app) {
   app
     .use(vuetify)
     .use(router)
+
 }
 
 router.afterEach((to, from) => {

@@ -1,36 +1,46 @@
 <template>
-  <div>
-    <v-navigation-drawer v-model="drawer" absolute temporary app width="150" height="340">
-      <v-list class="pt-4">
-        <v-list-tile active-class="green--text" to="/">
+  <div >
+    <!-- <v-navigation-drawer
+        v-model="drawer"
+        location="top"
+        temporary
+      >
+        <v-list
+          :items="items"
+        ></v-list>
+      </v-navigation-drawer> -->
+    <v-navigation-drawer v-model="drawer" location="left"  temporary theme="dark" app width="150" height="340">
+      <v-list >
+        <v-list-item active-class="green--text" to="/">
           <v-list-tile-content>
             <v-list-tile-title>HOME</v-list-tile-title>
           </v-list-tile-content>
-        </v-list-tile>
-        <v-list-tile active-class="green--text" to="/resume">
+        </v-list-item>
+        <v-list-item active-class="green--text" to="/resume">
           <v-list-tile-content>
             <v-list-tile-title>CV</v-list-tile-title>
           </v-list-tile-content>
-        </v-list-tile>
-        <v-list-tile active-class="green--text" to="/research">
+        </v-list-item>
+        <v-list-item active-class="green--text" to="/research">
           <v-list-tile-content>
             <v-list-tile-title>Research</v-list-tile-title>
           </v-list-tile-content>
-        </v-list-tile>
-        <v-list-tile active-class="green--text" href="https://ufind.univie.ac.at/en/person.html?id=105426&teaching=true">
+        </v-list-item>
+        <v-list-item active-class="green--text" href="https://ufind.univie.ac.at/en/person.html?id=105426&teaching=true">
           <v-list-tile-content>
             <v-list-tile-title>Teaching</v-list-tile-title>
           </v-list-tile-content>
-        </v-list-tile>
-        <v-list-tile active-class="green--text" to="/contact">
+        </v-list-item>
+        <v-list-item active-class="green--text" to="/contact">
           <v-list-tile-content>
             <v-list-tile-title>Contact</v-list-tile-title>
           </v-list-tile-content>
-        </v-list-tile>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar flat dense color="transparent" scroll-off-screen>
-      <v-toolbar-side-icon class="hidden-md-and-up" @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+
+    <v-toolbar flat  dense color="transparent" scroll-off-screen >
+      <v-app-bar-nav-icon variant="text" class="hidden-md-and-up" @click.stop="drawer = !drawer"><v-icon icon="fa fa-light fa-bars"></v-icon></v-app-bar-nav-icon>
       <v-toolbar-title class="headline">
         <span class="font-weight-light">Ivan</span> 
         <span class="green--text">Novikau</span>
@@ -64,7 +74,26 @@ export default {
   },
   data() {
     return {
-      drawer: null
+      drawer: null,
+      group: null,
+      items: [
+        {
+          title: 'CV',
+          value: '/resume',
+        },
+        {
+          title: 'Bar',
+          value: 'bar',
+        },
+        {
+          title: 'Fizz',
+          value: 'fizz',
+        },
+        {
+          title: 'Buzz',
+          value: 'buzz',
+        },
+      ],
     };
   },
   methods: {
@@ -76,4 +105,8 @@ export default {
 </script>
 
 <style >
+
+.v-navigation-drawer__content {
+	background: black !important;
+}
 </style>

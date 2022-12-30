@@ -31,9 +31,6 @@ export default createVuetify({
         component: ArxivIcon, // our custom component
       },
     },
-  },
-  provide: {
-    message: 'hello!'
   }
 })
 

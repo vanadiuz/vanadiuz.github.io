@@ -1,62 +1,26 @@
 <template>
-  <v-layout column justify-center align-center class="mt-4 pt-2">
-      <v-card flat color="transparent" max-width="500px">
-        <v-card-title primary-title>
-          <div>
-            <div class="container1">
 
-                <img class="image" src="./../assets/meditate.webp" alt="me" />
-              <div class="text">
-                <!-- <v-icon v-text="$vuetify.icons.values"></v-icon> -->
-                <div>
-                  <h2>PhD Student at U Vienna</h2>
-                  <br>
-                  <br>
-                  <h3><span
-                      class="green--text font-weight-bold"
-                    >Computer Simulations </span>  of 
-                    Soft Matter Physics</h3>
-                  <br>
-                  <!-- <h2>👨‍💻🧬👀</h2> -->
+  <div class="container">
+    <div class="a1">
+      <div class="container1">
+          <img class="image" src="./../assets/meditate.webp" alt="me"/>
+        <div class="text">
+          <!-- <v-icon v-text="$vuetify.icons.values"></v-icon> -->
 
-                </div>
-              </div>
-            </div>
-          </div>
-        </v-card-title>
-
-        <v-card-actions class="hidden-sm-and-down justify-center">
-          <v-btn
-            v-for="icon in icons"
-            :key="icon.icon"
-            fab
-            dark
-            outline
-            color="green"
-            :href="icon.href"
-            target="_blank"
-          >
-            <v-icon dark>{{icon.icon}}</v-icon>
-          </v-btn>
-        </v-card-actions>
-
-        <v-card-actions class="hidden-md-and-up justify-center">
-          <v-btn
-            v-for="icon in icons"
-            :key="icon.icon"
-            small
-            fab
-            dark
-            outline
-            color="green"
-            :href="icon.href"
-            target="_blank"
-          >
-          <v-icon  >{{icon.icon}}</v-icon>
-          <GoogleScolarIcon />
-          </v-btn>
-        </v-card-actions>
-      </v-card>
+            <!-- <h1>PhD Student at U Vienna</h1> -->
+            <div class="text-h5 title">PhD Student at U Vienna</div>
+            <div class="text-h7 title font-italic font-weight-light">Computer Simulations of 
+              Soft Matter Physics</div>
+            <!-- <h3><span
+                class="green--text font-weight-bold"
+              >Computer Simulations </span>  of 
+              Soft Matter Physics</h3>
+            <br>
+            <h2>👨‍💻🧬👀</h2> -->
+        </div>
+      </div>
+    </div>
+    <div class="a2">
       <v-card
         class="mx-auto"
         max-width="500"
@@ -87,8 +51,34 @@
           </v-list-item-content>
         </v-list-item>
       </v-card>
+    </div>
+    <div class="a3">
+        <v-card-actions class="justify-center">
+          <v-btn
+            v-for="icon in icons"
+            :key="icon.icon"
+            size="x-large"
+            fab
+            dark
+            outline
+            color="green"
+            :href="icon.href"
+            target="_blank"
+          >
+          <v-icon dark >{{icon.icon}}</v-icon>
+          </v-btn>
+        </v-card-actions>
+      
+    </div>
+  </div>
 
-  </v-layout>
+   
+        
+
+       
+
+      
+
 </template>
 
 <script>
@@ -184,14 +174,16 @@ export default {
 
 .container1 {
   display: grid; 
+  grid-auto-flow: column; 
   grid-auto-columns: 1fr; 
-  grid-auto-rows: 1fr; 
+  grid-auto-rows: auto; 
   grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr; 
+  grid-template-rows: auto; 
   gap: 0px 0px; 
   grid-template-areas: 
     "image text"; 
   justify-items: stretch; 
+  align-items: center;
 }
 .image { 
   justify-self: center; 
@@ -201,16 +193,19 @@ export default {
   grid-area: text; 
   /* squize bottom space */
   margin-bottom: 0px;
+  
 }
+
+
 
 /* new layout for small screen grid  */
 @media only screen and (max-width: 600px) {
   .container1 {
     display: grid; 
     grid-auto-columns: 1fr; 
-    grid-auto-rows: 1fr; 
+    grid-auto-rows: auto; 
     grid-template-columns: 1fr; 
-    grid-template-rows: 1fr 0.75fr; 
+    grid-template-rows: auto auto; 
     gap: 50px 0px; 
     grid-template-areas: 
       "image" 
@@ -226,13 +221,13 @@ export default {
     max-width: 100px;
     grid-area: image; 
   }
-  .text { grid-area: text; margin-bottom: 0px;}
+  .text { grid-area: text; margin-bottom: 0px; }
 }
 
 /* rotate .image by 10 degree */
 .image {
   transform: rotate(-7deg);
-  max-width: 100px;
+  max-width: 202px;
   /* width: 100%; */
 }
 
@@ -247,6 +242,39 @@ export default {
   content: "";
   display: block;
   padding-top: 100%;
+}
+
+.container {
+  display: grid; 
+  grid-auto-flow: column; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: auto auto auto; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "a1"
+    "a2"
+    "a3"; 
+}
+.a1 {
+  display: grid; 
+  grid-auto-flow: column; 
+  grid-template-columns: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "."; 
+  grid-area: a1; 
+  justify-items: center;
+  
+}
+.a2 { 
+  grid-area: a2; 
+  justify-self: center;
+
+}
+.a3 { 
+  grid-area: a3; 
+  justify-self: center;
+
 }
 
 </style>
