@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title>ivan-novikau</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <script
+      type="text/javascript"
+      src="//app.storyblok.com/f/storyblok-latest.js"
+    ></script>
+
+  </head>
+
+  <style>
+
+    html, body {
+      /* width:  100%; */
+      height: 100%;
+      margin: 0;
+    }
+
+
+    #container {
+      /* margin: 0; */
+      /* padding: 0; */
+      /* display: flex; */
+      /* flex-direction: column; */
+      /* justify-content: center; */
+      /* align-items: center; */
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    #container,
+    #app {
+      /* margin: 0;
+      padding: 0; */
+      position: absolute;
+      /* flex-direction: column; */
+      /* justify-content: center; */
+      /* align-items: center; */
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      background-color: transparent;
+    }
+
+  
+
+    canvas {
+      /* width: 100%; */
+      /* height: 100%; */
+      position: absolute;
+      /* border: 1px solid black; */
+      /* pointer-events: none; */
+      z-index: 1;
+    }
+  </style>
+
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but this webpage doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+
+    
+
+    <section id='container'>
+      
+      <div id="app"></div>
+      <canvas></canvas>
+    </section>
+
+
+
+    <!-- <div id="app"></div> -->
+    <!-- built files will be auto injected -->
+  </body>
+
+  <script src="bg.js"></script> 
+</html>
