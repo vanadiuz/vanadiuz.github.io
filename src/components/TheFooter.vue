@@ -11,6 +11,6 @@ export default {};
 <style>
 
 .ftr{
-  margin: auto;
+  margin: 0 auto;
 }
 </style>
