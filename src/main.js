@@ -24,7 +24,7 @@ router.afterEach((to, from) => {
     const canvas = document.getElementsByTagName('canvas')[0];
     canvas.height = document.getElementById("app1").clientHeight;
     
-  } , 1000);
+  } , 3000);
 })
 
 
