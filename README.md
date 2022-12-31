@@ -1,6 +1,6 @@
 # eldin.space
 
-Fork of (eldin.space)[https://github.com/EldinZaimovic/Eldin-Space-Vue]
+Fork of [eldin.space](https://github.com/EldinZaimovic/Eldin-Space-Vue)
 
 ## Project setup
 
