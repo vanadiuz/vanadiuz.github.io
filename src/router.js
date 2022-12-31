@@ -27,24 +27,6 @@ export default new Router({
         import( /* webpackChunkName: "about" */ "./views/Resume.vue")
     },
     {
-      path: "/blog",
-      name: "blog",
-      component: () =>
-        import( /* webpackChunkName: "about" */ "./views/Blog.vue")
-    },
-    {
-      path: "/blog/:id",
-      name: "blogPost",
-      component: () =>
-        import( /* webpackChunkName: "about" */ "./views/BlogPost.vue")
-    },
-    {
-      path: "/services",
-      name: "services",
-      component: () =>
-        import( /* webpackChunkName: "about" */ "./views/Services.vue")
-    },
-    {
       path: "/research",
       name: "research",
       component: () =>

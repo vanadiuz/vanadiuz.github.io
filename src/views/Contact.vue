@@ -2,8 +2,8 @@
 <template>
   <v-container grid-list-xl>
     <v-layout row justify-center align-center wrap class="mt-4 pt-2">
-      <v-flex xs12 sm12 md6 lg6 xl6>
-        <h2 class="pb-4 mt-2">
+      <v-flex xs12 sm8 md6 lg4 xl3>
+        <h2 class="pb-4 mt-2 mailing">
           <span>Office/Mailing</span>
           <span class="green--text">Address:</span>
         </h2>
@@ -21,7 +21,7 @@
           <span>ivan.novikau[at]</span>
           <span class="green--text">univie.ac.at</span>
         </div>
-        <div class="py-4 subheading font-weight-bold">
+        <div class="py-4 subheading font-weight">
           <span><em>Sorry if you didn't get any response, most likely your inquiry wasn't relevant enough.</em>😔</span>
         </div>
       </v-flex>
@@ -78,5 +78,9 @@ export default {
   display: flex;
   justify-content: flex-start; /* Align horizontal */
   align-items: center; 
+}
+
+.mailing{
+  text-align: center;
 }
 </style>

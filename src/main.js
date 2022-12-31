@@ -6,7 +6,6 @@ import StoryblokVue from 'storyblok-vue'
 // import VueAnalytics from 'vue-analytics'
 
 // import VueGraph from 'vue-graph'
-import BubbleCloud from 'vue-graph/src/components/bubblecloud.js'
 
 
 Vue.config.productionTip = false
@@ -18,7 +17,6 @@ new Vue({
 }).$mount('#app')
 
 Vue.use(StoryblokVue)
-Vue.component(BubbleCloud.name, BubbleCloud);
 
 
 router.afterEach((to, from) => {

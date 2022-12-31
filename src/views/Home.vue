@@ -10,13 +10,12 @@
               <div class="text">
                 <!-- <v-icon v-text="$vuetify.icons.values"></v-icon> -->
                 <div>
-                  <h2>PhD Student at U Vienna</h2>
+                  <h3>PhD Student at U Vienna</h3>
                   <br>
-                  <br>
-                  <h3><span
+                  <h4><span
                       class="green--text font-weight-bold"
                     >Computer Simulations </span>  of 
-                    Soft Matter Physics</h3>
+                    Soft Matter Physics</h4>
                   <br>
                   <!-- <h2>👨‍💻🧬👀</h2> -->
 
@@ -62,30 +61,6 @@
         max-width="500"
         tile
       >
-        <v-list-item>
-          <v-list-item-content>
-            <v-list-item-title>Single-line item</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-
-        <v-list-item two-line>
-          <v-list-item-content>
-            <v-list-item-title>Two-line item</v-list-item-title>
-            <v-list-item-subtitle>Secondary text</v-list-item-subtitle>
-          </v-list-item-content>
-        </v-list-item>
-
-        <v-list-item three-line>
-          <v-list-item-content>
-            <v-list-item-title>Three-line item</v-list-item-title>
-            <v-list-item-subtitle>
-              Secondary line text Lorem ipsum dolor sit amet,
-            </v-list-item-subtitle>
-            <v-list-item-subtitle>
-              consectetur adipiscing elit.
-            </v-list-item-subtitle>
-          </v-list-item-content>
-        </v-list-item>
       </v-card>
 
     </v-flex>
@@ -137,6 +112,7 @@ export default {
 };
 </script>
 <style>
+
 @keyframes rocking {
   0%,
   100% {
@@ -149,7 +125,7 @@ export default {
 }
 
 .vue-typer {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
 }
 .vue-typer .custom.char.typed {
   color: green;
@@ -204,6 +180,7 @@ export default {
       "image" 
       "text"; 
     justify-items: stretch; 
+    align-items: center;
     /* justify-items: center;  */
     /* justify-content: center;  */
   }
