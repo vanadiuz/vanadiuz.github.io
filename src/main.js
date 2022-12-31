@@ -2,7 +2,7 @@ import Vue from 'vue'
 import './plugins/vuetify'
 import App from './App.vue'
 import router from './router'
-import StoryblokVue from 'storyblok-vue'
+// import StoryblokVue from 'storyblok-vue'
 // import VueAnalytics from 'vue-analytics'
 
 // import VueGraph from 'vue-graph'
@@ -16,7 +16,7 @@ new Vue({
   render: h => h(App)
 }).$mount('#app')
 
-Vue.use(StoryblokVue)
+// Vue.use(StoryblokVue)
 
 
 router.afterEach((to, from) => {
@@ -24,7 +24,7 @@ router.afterEach((to, from) => {
     const canvas = document.getElementsByTagName('canvas')[0];
     canvas.height = document.getElementById("app1").clientHeight;
     
-  } , 1000);
+  } , 3000);
 })
 
 

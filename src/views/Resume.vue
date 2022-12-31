@@ -73,7 +73,7 @@
 export default {
   metaInfo: {
     title: "Resume",
-    titleTemplate: "%s ← Eldin's Space",
+    titleTemplate: "%s ← Ivan Novikau",
     meta: [
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
