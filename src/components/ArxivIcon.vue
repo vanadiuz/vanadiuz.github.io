@@ -1,6 +1,6 @@
 // GoogleScolarIcon.vue
 <template>
-  <img src="./../assets/icons/faces-icon.webp" alt="arxiv" width="100%" />
+  <img src="./../assets/icons/faces-icon.webp" alt="arxiv"/>
 </template>
   
   <script>
