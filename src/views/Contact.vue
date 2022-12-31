@@ -21,9 +21,9 @@
           <span>ivan.novikau[at]</span>
           <span class="green--text">univie.ac.at</span>
         </div>
-        <div class="py-4 subheading font-weight">
+        <!-- <div class="py-4 subheading font-weight">
           <span><em>Sorry if you didn't get any response, most likely your inquiry wasn't relevant enough.</em>😔</span>
-        </div>
+        </div> -->
       </v-flex>
     </v-layout>
   </v-container>
