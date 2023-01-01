@@ -106,7 +106,7 @@ export default {
           journal_link: "https://doi.org/10.1016/j.molliq.2021.118056",
           arxiv: "https://arxiv.org/pdf/2111.05376.pdf",
           youtube: "https://youtube.com/shorts/8vdF2-dSVBk?feature=share",
-          poster: "https://oththg.am.files.1drv.com/y4mehVHUAgBJyCJsCwf0dac_8Qtl3kycNT8m4BgrxXzcS-14i512EzEH9AZBxapRiS0Mt6ieHTXng3JAgrFvUufDFamGNnPoQdzCFccrQ850tj0wqIGlM4LMM88U88hqy9D8gw4OR2SkMzZMZXP4xJq_CNY0Ov382obTmbA33lINXfDXOgtJemDaehfpD5lfrRAxY6BYu-ci7B9n7jxY3nU8A/gel_in_flow.gif"
+          poster: "/content/gel_in_flow.gif"
         },
          {
           dialog: false,
@@ -116,7 +116,7 @@ export default {
           journal_link: "https://doi.org/10.1016/j.molliq.2020.112902",
           arxiv: "https://arxiv.org/pdf/2004.00725.pdf",
           youtube: "https://www.youtube.com/watch?v=r55vNMKm__k&list=PLWKzBeQmEdYTqsRtwxRuoHiP84gos4dMI",
-          poster: "https://rve4pg.am.files.1drv.com/y4myglmiKcrIdCQdti6WUfcsQjsLeOMj9-HrglI339EWNzyqOFZUA_-LxZy-6bwdDbvhUUMhqgOtkFXkpF19xa8FGnaiTaAHdt5gHj7NlDrm5TNwhEZLXQv1KSzTevAVhmGrF1Sre1TV7tvGwGuY7uhxCElXPS5o2wtA17ZHTFMb8phXweSDTHnhNO-R14h2mHbmLroCE5jDFHYcFON-kQi6Q/gels_in_field_slow_AdobeExpress%281%29.gif"
+          poster: "/content/gels_in_field_slow_AdobeExpress(1).gif"
         },
         {
           dialog: false,
@@ -125,7 +125,7 @@ export default {
           journal: "Journal of Magnetism and Magnetic Materials 498, 166152, 2020",
           journal_link: "https://doi.org/10.1016/j.jmmm.2019.166152",
           arxiv: "https://arxiv.org/pdf/1911.06031.pdf",
-          poster: "https://am3pap002files.storage.live.com/y4msYGmObEXye5mt_MlsHQ1qsXC9MfFS6Bv8K1NanMfptNDgodn0H_H_KIC_cXElgi4B4v2cnCejncLQF7oj4fgne4VT5AzaWU_4Y2rRQNGpFgdxARvj-PRfDm60dXZylguB2qQTdd1B_-qxBu76ZDGacbJXpmsgn3RgGQPfnKYQvHe8p4BLOCf3U-afxAcvOMAYlrHOCahllViD4QBAKxPmg/1st_paper.png?psid=1&width=400&height=374"
+          poster: "/content/1st_paper.png"
         },
       ]
     };
