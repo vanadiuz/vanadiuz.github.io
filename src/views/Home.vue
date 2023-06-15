@@ -18,12 +18,13 @@
                     Soft Matter Physics</h4>
                   <br>
                   <!-- <h2>👨‍💻🧬👀</h2> -->
-
                 </div>
               </div>
             </div>
           </div>
         </v-card-title>
+
+        
 
         <v-card-actions class="hidden-sm-and-down justify-center">
           <v-btn
@@ -106,7 +107,10 @@ export default {
       ],
       sliderLine: 0,
       hSize: 0,
-      sliderPosition: 0.5
+      sliderPosition: 0.5,
+
+      //get list of event objects from Conferences.vue
+      // events: this.$store.state.events,
     };
   }
 };

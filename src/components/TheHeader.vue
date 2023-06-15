@@ -22,6 +22,11 @@
             <v-list-tile-title>Teaching</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
+        <v-list-tile active-class="green--text" to="/conferences">
+          <v-list-tile-content>
+            <v-list-tile-title>Conferences</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
         <v-list-tile active-class="green--text" to="/contact">
           <v-list-tile-content>
             <v-list-tile-title>Contact</v-list-tile-title>
@@ -45,6 +50,7 @@
         <v-btn flat to="/resume" active-class="green--text headline">CV</v-btn>
         <v-btn flat to="/research" active-class="green--text headline">Research</v-btn>
         <v-btn flat href="https://ufind.univie.ac.at/en/person.html?id=105426&teaching=true" active-class="green--text headline">Teaching</v-btn>
+        <v-btn flat to="/conferences" active-class="green--text headline">Conferences</v-btn>
         <v-btn flat to="/contact" active-class="green--text headline">Contact</v-btn>
         <!-- <v-btn @click="changeTheme" depressed small icon> -->
           <!-- <v-icon v-if="goDark==true">fas fa-sun</v-icon> -->

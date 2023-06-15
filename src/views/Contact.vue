@@ -16,10 +16,12 @@
             <h5 class="font-weight-medium"><span >1090 Vianna, Austria</span></h5>
           </div>
         </div>
-        <div class="py-4 subheading font-weight-bold">
+        <div class="py-4 subheading font-weight-bold" style="justify-content: center;">
           <v-icon large color="green" left>fas fa-envelope</v-icon>
-          <span>ivan.novikau[at]</span>
-          <span class="green--text">univie.ac.at</span>
+          <div class="algn-ctnr">
+            <span>ivan.novikau[at]</span>
+            <span class="green--text">univie.ac.at</span>
+          </div>
         </div>
         <!-- <div class="py-4 subheading font-weight">
           <span><em>Sorry if you didn't get any response, most likely your inquiry wasn't relevant enough.</em>😔</span>

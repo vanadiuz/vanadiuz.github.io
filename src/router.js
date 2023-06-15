@@ -21,6 +21,12 @@ export default new Router({
         import( /* webpackChunkName: "about" */ "./views/Contact.vue")
     },
     {
+      path: "/conferences",
+      name: "Conferences, etc.",
+      component: () =>
+        import( /* webpackChunkName: "about" */ "./views/Conferences.vue")
+    },
+    {
       path: "/resume",
       name: "resume",
       component: () =>

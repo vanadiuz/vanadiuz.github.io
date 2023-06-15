@@ -100,8 +100,17 @@ export default {
       projects: [
         {
           dialog: false,
+          title: "Stockmayer supracolloidal magnetic polymers under the influence of an applied magnetic field and a shear flow",
+          subtitle: "I. S. Novikau, V. V. Zverev, E. V. Novak, S.S. Kantorovich",
+          journal: "Journal of Magnetism and Magnetic Materials 384, 122229, 2023",
+          journal_link: "https://doi.org/10.1016/j.molliq.2023.122229",
+          arxiv: "https://doi.org/10.48550/arXiv.2306.03005",
+          poster: "/content/stockmr_clusters.gif"
+        },
+        {
+          dialog: false,
           title: "Behaviour of a magnetic nanogel in a shear flow",
-          subtitle: "I.S. Novikau, E.V. Novak, E.S. Pyanzina, S.S. Kantorovich",
+          subtitle: "I. S. Novikau, E. V. Novak, E. S. Pyanzina, S. S. Kantorovich",
           journal: "Journal of Molecular Liquids 346, 118056, 2022",
           journal_link: "https://doi.org/10.1016/j.molliq.2021.118056",
           arxiv: "https://arxiv.org/pdf/2111.05376.pdf",
@@ -111,7 +120,7 @@ export default {
          {
           dialog: false,
           title: "The influence of an applied magnetic field on the self-assembly of magnetic nanogels",
-          subtitle: "I.S. Novikau, P.A. Sánchez, S.S. Kantorovich",
+          subtitle: "I. S. Novikau, P. A. Sánchez, S. S. Kantorovich",
           journal: "Journal of Molecular Liquids 307, 112902, 2020",
           journal_link: "https://doi.org/10.1016/j.molliq.2020.112902",
           arxiv: "https://arxiv.org/pdf/2004.00725.pdf",
@@ -121,7 +130,7 @@ export default {
         {
           dialog: false,
           title: "Suspensions of magnetic nanogels at zero field: Equilibrium structural properties",
-          subtitle: "I.S. Novikau, E. S. Minina, P.A. Sánchez, S.S. Kantorovich",
+          subtitle: "I. S. Novikau, E. S. Minina, P. A. Sánchez, S. S. Kantorovich",
           journal: "Journal of Magnetism and Magnetic Materials 498, 166152, 2020",
           journal_link: "https://doi.org/10.1016/j.jmmm.2019.166152",
           arxiv: "https://arxiv.org/pdf/1911.06031.pdf",

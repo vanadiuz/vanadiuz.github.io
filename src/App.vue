@@ -47,7 +47,11 @@ export default {
     TheFooter
   },
   data() {
-    return { goDark: true };
+    return { 
+      goDark: true,
+    };
+
+
   },
   methods: {
     updateTheme(updatedTheme) {
