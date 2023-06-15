@@ -105,6 +105,7 @@ export default {
           journal: "Journal of Magnetism and Magnetic Materials 384, 122229, 2023",
           journal_link: "https://doi.org/10.1016/j.molliq.2023.122229",
           arxiv: "https://doi.org/10.48550/arXiv.2306.03005",
+          youtube: "https://www.youtube.com/watch?v=M9pZp62QWiw&list=PLWKzBeQmEdYQvgoaFeg_hzGp3bL4TaDPB",
           poster: "/content/stockmr_clusters.gif"
         },
         {
